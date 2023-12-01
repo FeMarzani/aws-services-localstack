@@ -8,6 +8,7 @@
   <img align="center" alt="localstack" height="28" width="42" src="https://avatars.githubusercontent.com/u/28732122?s=200&v=4"/>
   <img align="center" alt="Marzani-Flask" height="28" width="42" src="https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/flask/flask-original-wordmark.svg">
   <img align="center" alt="Gunicorn" height="28" width="42" src="https://gunicorn.org/images/logo.jpg" />
+  <img align="center" alt="Serverless-framework" height="28" width="42" src="https://user-images.githubusercontent.com/2752551/30405068-a7733b34-989e-11e7-8f66-7badaf1373ed.png">
 </div>
 
 ### Descrição:
@@ -42,3 +43,5 @@ A mensagem irá conter:
 Sendo que:
 - `title`: nome doo arquivo a ser salvo no bucket.
 - `genre`: define qual bucket o arquivo será salvo.
+
+- Será utilizado o Serverless Framework, com o plugin para o localstack, afim de subir a infraestrutura como código (criação das filas SQS e dos Buckets).
