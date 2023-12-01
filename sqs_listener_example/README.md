@@ -1,0 +1,3 @@
+### Criação de uma API que suporta longos períodos de processamento.
+
+### README SERÁ ATUALIZADO COM O TEMPO...
