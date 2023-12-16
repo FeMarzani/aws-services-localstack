@@ -49,4 +49,27 @@ Nesta pasta específica deste repositório em questão, vamos ter um modelo de e
 </div>
 <br>
 
-- Neste momento, o locakstack estará em execução no docker. Com isso, fazendo o serverless deploy você irá ter o seguinte retorno no terminal.
+- Neste momento, o locakstack estará em execução no docker. Com isso, fazendo o serverless deploy você irá ter o seguinte retorno no terminal depois do deploy estar finalizando a execução.
+
+<div align="center">
+    <img align="center" alt="serverless" src="assets/image3.png"/>
+</div>
+<br>
+
+- Observe que os nomes que aperecem estarem executando no terminal são o nome do plugin do serverless localstack e o nome do serviço definido no yaml do ```serverless.yml```.
+
+- Neste momento a arquitetura foi subida com êxito utilizando o localstack, agora, para podermos visualizar se estas informações realmente foram subidas, podemos utilizar comandos no terminal com o ```awslocal```. Os comandos de ```awslocal``` são simplificados e facilitam a visualização desses serviços criados. 
+
+- Vamos começar então listando os buckets criados:
+
+    ```bash
+    awslocal s3 ls
+    ```
+    Será mostrada as seguintes informações:
+    <div align="center">
+        <img align="center" alt="s3" src="assets/s3ls.png"/>
+    </div>
+    <br>
+    Note que temos os dois buckets criados na arquitetura: bucket-teste1 e bucket-teste2. Além disso, temos um bucket chamado deploy. Este bucket foi criado no momento em que fizemos o deploy com o serverless framework.
+    <br>
+    <br>
