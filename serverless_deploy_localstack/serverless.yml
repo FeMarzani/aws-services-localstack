@@ -1,1 +1,35 @@
-# Setando arquivo inicial do serverless
+service: deploy-localstack-exemplo
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1 
+
+resources:
+  Resources:
+
+    # SUBINDO SERVIÇOS PARA TESTAR O DEPLOY NO LOCALSTACK VIA SERVERLESS FRAMEWORK
+    Teste1Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: bucket-teste1
+
+    Teste2Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: bucket-teste2
+
+    SQSQueueTeste1:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: "Queue.fifo"
+        FifoQueue: true
+
+    SNSTopicTeste1:
+      Type: AWS::SNS::Topic
+      Properties:
+        TopicName: "Topic"
+
+# Plugin necessário para a utilização do serverless para deploy no localstack
+plugins:
+  - serverless-localstack

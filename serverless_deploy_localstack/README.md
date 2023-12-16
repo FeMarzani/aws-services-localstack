@@ -36,9 +36,17 @@ Nesta pasta específica deste repositório em questão, vamos ter um modelo de e
     ```bash
     localstack start -d
     ```
-    E depois execute:
+    Lembre-se: você precisa estar na respectiva pasta que contém o arquivo do serverless para poder fazer o delploy, portando verifique no terminal se você está na pasta. Feito isso, execute:
     ```
     serverless deploy
     ```
 
 ### Visualização:
+- Depois de executar o localstack você irá ver o seguinte retorno no terminal.
+
+<div align="center">
+    <img align="center" alt="localstack" src="assets/image.png"/>
+</div>
+<br>
+
+- Neste momento, o locakstack estará em execução no docker. Com isso, fazendo o serverless deploy você irá ter o seguinte retorno no terminal.
