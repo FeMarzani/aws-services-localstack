@@ -3,7 +3,8 @@ service: localstack-serverless-sqslistener
 provider:
   name: aws
   runtime: python3.9
-  endpointUrl: http://localhost:4566 # CONFIGURANDO A URL DO LOCALSTACK COMO ENDPOINT PARA O DEPLOY DO SERVERLESS
+  # CONFIGURANDO A URL DO LOCALSTACK COMO ENDPOINT PARA O DEPLOY DO SERVERLESS.
+  endpointUrl: http://localhost:4566  # A URL estará referenciando o localstack em execução no docker
   region: us-east-1  # USANDO US-EAST-1 COMO REGIÃO PADRÃO PARA O LOCALSTACK.
 
 resources:
