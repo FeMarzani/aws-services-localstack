@@ -85,3 +85,12 @@ Nesta pasta específica deste repositório em questão, vamos ter um modelo de e
 <br>
 
 - Podemos por fim listar o tópico SNS que foi criado na arquitetura.
+    ```bash
+    awslocal sns list-topics
+    ```
+    Feito isso, teremos como retorno no terminal a informação referente ao Arn do Tópico SNS criado. Se houvessem mais de um tópico, estas informações também apareceriam. Note que estas informações apresentariam mais dados se fosse realmente um deploy na AWS. Lembre que justamente o localstack serve para simular. 
+    <div align="center">
+        <img align="center" alt="sns" src="assets/snsls.png"/>
+    </div>
+<br>
+<br>
