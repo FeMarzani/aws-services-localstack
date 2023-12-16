@@ -73,3 +73,15 @@ Nesta pasta específica deste repositório em questão, vamos ter um modelo de e
     Note que temos os dois buckets criados na arquitetura: bucket-teste1 e bucket-teste2. Além disso, temos um bucket chamado deploy. Este bucket foi criado no momento em que fizemos o deploy com o serverless framework.
     <br>
     <br>
+
+- Podemos listar também a fila SQS que criamos no arquivo do serverless.
+    ```bash
+    awslocal sqs list-queues
+    ```
+    Feito isso, teremos como retorno no terminal as seguintes URL listadas das filas SQS criadas.
+    <div align="center">
+        <img align="center" alt="sqs" src="assets/sqsls.png"/>
+    </div>
+<br>
+
+- Podemos por fim listar o tópico SNS que foi criado na arquitetura.
