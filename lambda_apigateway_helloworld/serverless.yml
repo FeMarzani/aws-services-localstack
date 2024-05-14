@@ -1,0 +1,18 @@
+service: my-simple-lambda-service
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: local
+  region: us-east-1 # Padrão do LocalStack
+
+functions:
+  helloWorld:
+    handler: lambda.handler
+    events:
+      - http:
+          path: hello
+          method: get
+
+plugins:
+  - serverless-localstack
